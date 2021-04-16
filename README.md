@@ -15,8 +15,16 @@ display current books, edit book detail, delete books from the list.
 - How to store data in local storage to persist it even after page refresh
 - How to manage data stored in local storage using a custom hook
 
-Resource article:
+### Tech Stack
+Create-React-App, React Hooks, SCSS, Bootstrap, React-Router
+
+### How to run the App
+npm start and navigate to http://localhost:3000/
+
+### Resource
+Article:
 https://www.freecodecamp.org/news/react-crud-app-how-to-create-a-book-management-app-from-scratch/
 
 Tutorial By:
 Yogesh Chavan
+
