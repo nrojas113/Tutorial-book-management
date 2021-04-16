@@ -1,6 +1,12 @@
-### React CRUD App Tutorial
+# React CRUD App Tutorial
 
-# Learning Objectives
+### App Overview
+
+Simple Book Management App that allows user to add new book,
+<br />
+display current books, edit book detail, delete books from the list.
+
+### Learning Objectives
 
 - How to perform CRUD operations
 - How to use React Router for navigation between routes
