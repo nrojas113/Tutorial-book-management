@@ -1,9 +1,12 @@
 import React from "react";
 import BookForm from "./BookForm";
 
-const AddBook = () => {
+const AddBook = (props) => {
+  const { history, books, setBooks } = props;
   const handleOnSubmit = (book) => {
-    console.log(book);
+    //add the new book first & spread existing books - store in one array
+    setBooks([book, ...books]);
+    history.push("/");
   };
 
   return (
