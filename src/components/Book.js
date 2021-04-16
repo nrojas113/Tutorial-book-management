@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 const Book = (props) => {
   const {
@@ -11,6 +12,7 @@ const Book = (props) => {
     date,
     handleRemoveBook,
   } = props;
+  const history = useHistory();
   return (
     <Card style={{ width: "18rem" }} className="book">
       <Card.Body>
@@ -21,7 +23,11 @@ const Book = (props) => {
           <div>Price: {price}</div>
           <div>Date: {new Date(date).toDateString()}</div>
         </div>
-        <Button variant="primary">Edit</Button>{" "}
+        {/* when Edit is clicked, redirect the user to Edit Book component
+        by using history.push & passing id of the book to be edited */}
+        <Button variant="primary" onClick={() => history.push(`/edit/${id}`)}>
+          Edit
+        </Button>{" "}
         <Button variant="danger" onClick={() => handleRemoveBook(id)}>
           Delete
         </Button>
