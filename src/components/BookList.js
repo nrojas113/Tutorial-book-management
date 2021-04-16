@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 //lodash is a library that provides utility functions
 import _ from "lodash";
 import Book from "./Book";
+import BooksContext from "../context/BooksContext";
 
-const BookList = (props) => {
-  const { books, setBooks } = props;
+const BookList = () => {
+  //get the books & setBooks through Context API
+  const { books, setBooks } = useContext(BooksContext);
+
   const handleRemoveBook = (id) => {
     //if delete button is clicked (Book Component),
     //remove the book with the selected book id
