@@ -69,7 +69,6 @@ const BookForm = (props) => {
     }
     setErrorMsg(errorMsg);
   };
-  console.log(book);
   return (
     <div className="main-form">
       {errorMsg && <p className="errorMsg">{errorMsg}</p>}
