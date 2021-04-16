@@ -57,7 +57,7 @@ const BookForm = (props) => {
         quantity,
         date: new Date(),
       };
-      //save the info on props
+      //handle on submit is passed from "AddBook" component
       props.handleOnSubmit(book);
     } else {
       //otherwise display error message
